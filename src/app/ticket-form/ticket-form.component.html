@@ -1,78 +1,51 @@
-<div class="form">
-  <h1 class="title has-text-grey">Submit a ticket</h1>
-  <div class="field">
-    <label class="label has-text-primary-dark">Search a requestor</label>
-    <div class="control">
-      <input
-        class="input is-primary"
-        type="email"
-        placeholder="Enter email to search"
-      />
-    </div>
-  </div>
-  <div class="field">
-    <label class="label has-text-primary-dark">Your team</label>
-    <div class="control">
-      <div class="select is-primary">
-        <select>
-          <option>xyz</option>
-          <option>abc</option>
-        </select>
+<div class="container">
+  <div class="form">
+    <h1 class="title has-text-grey">Submit a ticket</h1>
+    
+    
+    <div class="field">
+      <label class="label has-text-primary-dark">Category</label>
+      <div class="control">
+        <div class="select is-primary">
+          <select>
+            <option>Category A</option>
+            <option>Category B</option>
+          </select>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="field">
-    <label class="label has-text-primary-dark">Category</label>
-    <div class="control">
-      <div class="select is-primary">
-        <select>
-          <option>Category A</option>
-          <option>Category B</option>
-        </select>
+    
+    <div class="field">
+      <label class="label has-text-primary-dark">Subject</label>
+      <div class="control">
+        <input class="input is-primary" type="text" />
       </div>
     </div>
-  </div>
-  <div class="field">
-    <label class="label has-text-primary-dark">Classification</label>
-    <div class="control">
-      <div class="select is-primary">
-        <select>
-          <option>Classification A</option>
-          <option>Classification B</option>
-        </select>
+    <div class="field">
+      <label class="label has-text-primary-dark">Description</label>
+      <div class="control">
+        <textarea class="textarea is-primary" rows="3"></textarea>
       </div>
     </div>
-  </div>
-  <div class="field">
-    <label class="label has-text-primary-dark">Subject</label>
-    <div class="control">
-      <input class="input is-primary" type="text" />
-    </div>
-  </div>
-  <div class="field">
-    <label class="label has-text-primary-dark">Description</label>
-    <div class="control">
-      <textarea class="textarea is-primary" rows="3"></textarea>
-    </div>
-  </div>
-  <div class="field">
-    <div class="file is-primary">
-      <label class="file-label has-text-primary-dark">
-        <input class="file-input is-primary" type="file" name="resume" />
-        <span class="file-cta">
-          <span class="file-label">
-            Choose a file…
+    <div class="field">
+      <div class="file is-primary">
+        <label class="file-label has-text-primary-dark">
+          <input class="file-input is-primary" type="file" name="resume" />
+          <span class="file-cta">
+            <span class="file-label">
+              Choose a file…
+            </span>
           </span>
-        </span>
-      </label>
+        </label>
+      </div>
     </div>
-  </div>
-  <div class="field is-grouped">
-    <div class="control">
-      <button class="button is-primary">Submit</button>
-    </div>
-    <div class="control">
-      <button class="button is-primary is-light">Cancel</button>
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-primary">Submit</button>
+      </div>
+      <div class="control">
+        <button class="button is-primary is-light">Cancel</button>
+      </div>
     </div>
   </div>
 </div>

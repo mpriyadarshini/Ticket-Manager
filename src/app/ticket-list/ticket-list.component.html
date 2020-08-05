@@ -1,14 +1,14 @@
 <app-header></app-header>
 
 <div class="container">
-  <!-- TODO: this ticket should be a new component-->
-  <div class="ticket">
-    <div class="ticket-title">
-      <a  class="is-size-4" routerLink="/user/tickets/details">Updated Redis Cache Book</a>
-      <span class="tag is-success ml-auto">
-        This ticket has been closed
-      </span>
-    </div>
-    <p class="meta has-text-grey is-size-7">Created on Fri,2019, Jun 7 at 11:07 AM</p>
-  </div>
+  <app-ticket
+    title="Update Redis Cache Cookbook"
+    created="2020-08-05T21:03:17+05:30"
+    state="closed"
+  ></app-ticket>
+  <app-ticket
+    title="Update Redis Cache Cookbook"
+    created="2020-08-05T21:03:17+05:30"
+    state="open"
+  ></app-ticket>
 </div>

@@ -1,0 +1,12 @@
+<div class="ticket-title">
+  <a class="is-size-4" routerLink="/user/tickets/details">{{ title }}</a>
+  <span class="tag is-success ml-auto" *ngIf="state === 'closed'">
+    This ticket has been closed
+  </span>
+  <span class="tag is-info ml-auto" *ngIf="state === 'open'">
+    This ticket is open
+  </span>
+</div>
+<p class="meta has-text-grey is-size-7">
+  Created on {{ created | date: "medium" }}
+</p>

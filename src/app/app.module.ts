@@ -8,6 +8,7 @@ import { TicketListComponent } from './ticket-list/ticket-list.component';
 import { TicketFormComponent } from './ticket-form/ticket-form.component';
 import { HeaderComponent } from './header/header.component';
 import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
+import { TicketComponent } from './ticket/ticket.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TicketDetailsComponent } from './ticket-details/ticket-details.componen
     TicketListComponent,
     TicketFormComponent,
     HeaderComponent,
-    TicketDetailsComponent
+    TicketDetailsComponent,
+    TicketComponent
   ],
   imports: [
     BrowserModule,

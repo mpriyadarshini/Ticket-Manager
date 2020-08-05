@@ -1,0 +1,9 @@
+.ticket-title {
+    display: flex;
+    align-items: center;
+}
+:host{
+    border-bottom: 1px solid black;
+    padding: 1rem 0;
+    display: block;
+}

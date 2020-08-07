@@ -9,6 +9,7 @@ import { TicketFormComponent } from './ticket-form/ticket-form.component';
 import { HeaderComponent } from './header/header.component';
 import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
 import { TicketComponent } from './ticket/ticket.component';
+import { AgentViewComponent } from './agent-view/agent-view.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TicketComponent } from './ticket/ticket.component';
     TicketFormComponent,
     HeaderComponent,
     TicketDetailsComponent,
-    TicketComponent
+    TicketComponent,
+    AgentViewComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { TicketDetailsComponent } from './ticket-details/ticket-details.componen
 import { TicketComponent } from './ticket/ticket.component';
 import { AgentViewComponent } from './agent-view/agent-view.component';
 import { UserViewComponent } from './user-view/user-view.component';
+import { AgentTicketListComponent } from './agent-ticket-list/agent-ticket-list.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UserViewComponent } from './user-view/user-view.component';
     TicketDetailsComponent,
     TicketComponent,
     AgentViewComponent,
-    UserViewComponent
+    UserViewComponent,
+    AgentTicketListComponent
   ],
   imports: [
     BrowserModule,

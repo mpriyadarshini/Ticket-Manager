@@ -1,6 +1,6 @@
 <nav class="navbar is-dark">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
+    <a class="navbar-item" routerLink="/{{baseUrl}}">
       <img height="28" src="../../assets/images/ticket-logo.png" width="28"/>
     </a>
 
@@ -17,13 +17,13 @@
   </div>
   <div class="navbar-menu" id="navbar">
     <div class="navbar-start">
-      <a class="navbar-item" routerLink="/">Home</a>
-      <a class="navbar-item" routerLink="/user/tickets">Tickets</a>
+      <a class="navbar-item" routerLink="/{{baseUrl}}">Home</a>
+      <a class="navbar-item" routerLink="/{{baseUrl}}/tickets">Tickets</a>
     </div>
     <div class="navbar-end">
       <div class="navbar-item" *ngIf="showNewTicketButton">
         <div class="buttons">
-          <a class="button is-primary" routerLink="/user/tickets/new">
+          <a class="button is-primary" routerLink="/{{baseUrl}}/tickets/new">
             <strong>New Ticket</strong>
           </a>
         </div>

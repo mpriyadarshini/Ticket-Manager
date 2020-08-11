@@ -21,7 +21,7 @@
       <a class="navbar-item" routerLink="/user/tickets">Tickets</a>
     </div>
     <div class="navbar-end">
-      <div class="navbar-item">
+      <div class="navbar-item" *ngIf="showNewTicketButton">
         <div class="buttons">
           <a class="button is-primary" routerLink="/user/tickets/new">
             <strong>New Ticket</strong>

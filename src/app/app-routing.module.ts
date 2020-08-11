@@ -25,7 +25,11 @@ const routes: Routes = [
     component: AgentViewComponent,
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'tickets' },
-      { path: 'tickets', component: AgentTicketListComponent },
+      {
+        path: 'tickets',
+        component: AgentTicketListComponent,
+        children: [{ path: 'details', component: TicketDetailsComponent }],
+      },
     ],
   },
 ];

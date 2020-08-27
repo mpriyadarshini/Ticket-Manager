@@ -1,18 +1,12 @@
 <div class="tile is-ancestor">
     <div class="tile is-parent">
       <ul>
-        <li>
+        <li *ngFor="let ticket of tickets">
           <app-ticket
-            title="Update Redis Cache Cookbook"
-            created="2020-08-05T21:03:17+05:30"
-            state="closed"
-          ></app-ticket>
-        </li>
-        <li>
-          <app-ticket
-            title="Update Redis Cache Cookbook"
-            created="2020-08-05T21:03:17+05:30"
-            state="open"
+            [ticketId]="ticket.id"
+            title="{{ticket.subject}}"
+            [created]="ticket.createdAt"
+            state="{{ticket.state}}"
           ></app-ticket>
         </li>
       </ul>

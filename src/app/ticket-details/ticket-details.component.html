@@ -1,12 +1,12 @@
-<div class="notification is-primary">
+<div class="notification is-primary" *ngIf="ticket.state == 'open'">
   <button class="delete"></button>
-  The ticket is open. Click here to reply
+  The ticket is open.
 </div>
 
 <div class="container">
-  <h6 class="title">Updated Redis Cache Book</h6>
   <div class="card">
     <div class="card-content">
+      <h1 class="title">{{ticket.subject}}</h1>
       <div class="media">
         <div class="media-left">
           <figure class="image is-48x48">
@@ -17,15 +17,20 @@
           </figure>
         </div>
         <div class="media-content">
-          <p class="title is-4">Megha Priyadarshini</p>
-          <p class="subtitle is-6">Updated 8 hours ago</p>
+          <p class="is-size-4">Megha Priyadarshini</p>
+          <p class="is-size-7">Last updated {{ticket.updatedAt | timeago}}</p>
         </div>
       </div>
+      <p>
+        {{ticket.replies[0].content}}
+      </p>
+    </div>
+  </div>
 
-      <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-        iaculis mauris.
-      </div>
+  <div class="card" *ngFor="let reply of ticket.replies.slice(1)">
+    <div class="card-content">
+      <p class="is-size-7">{{ reply.createdAt | timeago}}</p>
+      <p>{{reply.content}}</p>
     </div>
   </div>
 </div>

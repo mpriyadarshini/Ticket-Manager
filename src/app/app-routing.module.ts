@@ -17,7 +17,7 @@ const routes: Routes = [
       { path: '', pathMatch: 'full', redirectTo: 'tickets' },
       { path: 'tickets', component: TicketListComponent },
       { path: 'tickets/new', component: TicketFormComponent },
-      { path: 'tickets/details', component: TicketDetailsComponent },
+      { path: 'tickets/:id', component: TicketDetailsComponent },
     ],
   },
   {

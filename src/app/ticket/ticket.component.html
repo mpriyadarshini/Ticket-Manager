@@ -1,5 +1,5 @@
 <div class="ticket-title">
-  <a class="is-size-4" routerLink="details">{{ title }}</a>
+  <a class="is-size-4" routerLink="{{ticketId}}">{{ title }}</a>
   <span class="tag is-success ml-auto" *ngIf="state === 'closed'">
     This ticket has been closed
   </span>

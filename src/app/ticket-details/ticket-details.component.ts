@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {Ticket, TicketService} from '../services/ticket.service';
 
 @Component({
   selector: 'app-ticket-details',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TicketDetailsComponent implements OnInit {
 
-  constructor() { }
+  ticket: Ticket;
+
+  constructor(private route: ActivatedRoute, private ticketService: TicketService) {
+  }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      this.ticket = this.ticketService.getTicket(params.get('id'));
+    });
   }
 
 }

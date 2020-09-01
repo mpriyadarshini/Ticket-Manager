@@ -1,17 +1,18 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ScreenComponent } from './screen/screen.component';
-import { TicketListComponent } from './ticket-list/ticket-list.component';
-import { TicketFormComponent } from './ticket-form/ticket-form.component';
-import { HeaderComponent } from './header/header.component';
-import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
-import { TicketComponent } from './ticket/ticket.component';
-import { AgentViewComponent } from './agent-view/agent-view.component';
-import { UserViewComponent } from './user-view/user-view.component';
-import { AgentTicketListComponent } from './agent-ticket-list/agent-ticket-list.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {ScreenComponent} from './screen/screen.component';
+import {TicketListComponent} from './ticket-list/ticket-list.component';
+import {TicketFormComponent} from './ticket-form/ticket-form.component';
+import {HeaderComponent} from './header/header.component';
+import {TicketDetailsComponent} from './ticket-details/ticket-details.component';
+import {TicketComponent} from './ticket/ticket.component';
+import {AgentViewComponent} from './agent-view/agent-view.component';
+import {UserViewComponent} from './user-view/user-view.component';
+import {AgentTicketListComponent} from './agent-ticket-list/agent-ticket-list.component';
+import {TimeagoModule} from 'ngx-timeago';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AgentTicketListComponent } from './agent-ticket-list/agent-ticket-list.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TimeagoModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
